@@ -1,0 +1,7 @@
+<template>
+    <van-uploader></van-uploader>
+    <template v-if="isAndH5">
+        <van-uploader v-show="false"></van-uploader>
+        <van-action-sheet v-if="showAndroidChooseModal"></van-action-sheet>
+    </template>
+</template>
